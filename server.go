@@ -14,6 +14,6 @@ func handler(w http.ResponseWriter, r *http.Request) {
 func main() {
 	r := mux.NewRouter()
 	r.HandleFunc("/ping/", handler)
-	r.HandleFunc("/get/{key}",keyGetHandler)
+	r.HandleFunc("/get/{key}",handlers.KeyGetHandler)
 
 }
